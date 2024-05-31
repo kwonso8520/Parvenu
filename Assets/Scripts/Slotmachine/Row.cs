@@ -68,21 +68,21 @@ public class Row : MonoBehaviour
             yield return new WaitForSeconds(timeInterval);
         }
 
-        if (transform.position.y == -2.85f)
+        if (transform.position.y >= -2.85f && transform.position.y <= -2.75f)
             stoppedSlot = "Diamond";
-        else if (transform.position.y == -2.1f)
+        else if (transform.position.y >= -2.1f && transform.position.y <= -2.0f)
             stoppedSlot = "Crown";
-        else if (transform.position.y == -1.35f)
+        else if (transform.position.y >= -1.35f && transform.position.y <= -1.25f)
             stoppedSlot = "Melon";
-        else if (transform.position.y == -0.6f)
+        else if (transform.position.y >= -0.6f && transform.position.y <= -0.5f)
             stoppedSlot = "Bar";
-        else if (transform.position.y == 0.15f)
+        else if (transform.position.y >= 0.15f && transform.position.y <= 0.25f)
             stoppedSlot = "Seven";
-        else if (transform.position.y == 0.9f)
+        else if (transform.position.y >= 0.9f && transform.position.y <= 1f)
             stoppedSlot = "Cherry";
-        else if (transform.position.y == 1.65f)
+        else if (transform.position.y >= 1.65f && transform.position.y <= 1.75f)
             stoppedSlot = "Lemon";
-        else if (transform.position.y == 2.4f)
+        else if (transform.position.y >= 2.4f && transform.position.y <= 2.5f)
             stoppedSlot = "Diamond";
 
         rowStopped = true;
